@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:orientation="vertical" android:padding="24dp"
+ android:layout_width="match_parent" android:layout_height="wrap_content">
+
+<TextView android:text="Scale Weight Converter" android:textSize="28sp" android:textStyle="bold"
+ android:layout_marginBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:text="Default calibration: 225 g scale = 288 g real"
+ android:textSize="15sp" android:layout_marginBottom="20dp"
+ android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+<TextView android:text="Calibration factor (Real ÷ Scale)" android:textStyle="bold"
+ android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<EditText android:id="@+id/factorInput" android:inputType="numberDecimal" android:text="1.28"
+ android:hint="e.g. 1.28" android:layout_marginBottom="24dp"
+ android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+<TextView android:text="Scale reading → Real weight" android:textSize="20sp" android:textStyle="bold"
+ android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<EditText android:id="@+id/scaleInput" android:inputType="numberDecimal"
+ android:hint="Enter scale reading (g)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/realResult" android:text="Real weight: —" android:textSize="22sp" android:textStyle="bold"
+ android:layout_marginTop="12dp" android:layout_marginBottom="28dp"
+ android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+<TextView android:text="Real weight → Scale reading" android:textSize="20sp" android:textStyle="bold"
+ android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<EditText android:id="@+id/realInput" android:inputType="numberDecimal"
+ android:hint="Enter real weight (g)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/scaleResult" android:text="Scale reading: —" android:textSize="22sp" android:textStyle="bold"
+ android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+<TextView android:text="Real = Scale × factor   |   Scale = Real ÷ factor"
+ android:textSize="14sp" android:layout_marginTop="28dp"
+ android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>
+</ScrollView>
